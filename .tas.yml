@@ -1,13 +1,8 @@
 ---
 framework: jest
-blocklist:
-  - "src/api/traversing.spec.ts##$(...)##.add()##(element) honors document order when element occurs :##within the current selection"
 postMerge:
   pattern:
     - './src/**/*.spec.ts'
-  strategy:
-    threshold: <5|100s|30m|6h>
-    type: <commit|time>
 preMerge:
   pattern:
     - './src/**/*.spec.ts'
