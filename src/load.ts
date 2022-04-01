@@ -191,7 +191,6 @@ export function load(
 
     // If we still don't have a context, return
     if (!searchContext) return instance as any;
-
     /*
      * #id, .class, tag
      */
